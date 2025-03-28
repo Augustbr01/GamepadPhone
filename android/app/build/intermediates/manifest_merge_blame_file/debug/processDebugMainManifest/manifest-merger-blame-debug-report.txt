@@ -1,0 +1,449 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gamepadphone.august"
+4    android:versionCode="1"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:6:3-75
+11-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:6:20-73
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:2:3-62
+12-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:2:20-60
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:3:3-64
+13-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:3:20-62
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:4:3-77
+14-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:4:20-75
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:5:3-68
+15-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:5:20-66
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:7:3-63
+16-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:7:20-61
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:8:3-78
+17-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:8:20-76
+18
+19    <queries>
+19-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:9:3-15:13
+20        <intent>
+20-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:10:5-14:14
+21            <action android:name="android.intent.action.VIEW" />
+21-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:7-58
+21-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:15-56
+22
+23            <category android:name="android.intent.category.BROWSABLE" />
+23-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:7-67
+23-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:17-65
+24
+25            <data android:scheme="https" />
+25-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:7-37
+25-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:13-35
+26        </intent>
+27
+28        <package android:name="host.exp.exponent" /> <!-- Query open documents -->
+28-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-53
+28-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-50
+29        <intent>
+29-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:9-17:18
+30            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+30-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-79
+30-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:21-76
+31        </intent>
+32        <intent>
+32-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:23:9-25:18
+33            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+33-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:24:13-86
+33-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:24:21-83
+34        </intent>
+35    </queries>
+36
+37    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+37-->[:expo-sensors] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-sensors\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-79
+37-->[:expo-sensors] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-sensors\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-76
+38
+39    <permission
+39-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+40        android:name="com.gamepadphone.august.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.gamepadphone.august.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+43-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+44    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+45    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+45-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
+45-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:25:22-76
+46
+47    <application
+47-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:3-33:17
+48        android:name="com.gamepadphone.august.MainApplication"
+48-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:16-47
+49        android:allowBackup="true"
+49-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:116-142
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.13.1] C:\Users\August\.gradle\caches\8.10.2\transforms\152740e363b1ef2a2c682c948dbced74\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+51        android:debuggable="true"
+52        android:extractNativeLibs="false"
+53        android:icon="@mipmap/ic_launcher"
+53-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:81-115
+54        android:label="@string/app_name"
+54-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:48-80
+55        android:supportsRtl="true"
+55-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:175-201
+56        android:theme="@style/AppTheme"
+56-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:16:143-174
+57        android:usesCleartextTraffic="true" >
+57-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\debug\AndroidManifest.xml:6:18-53
+58        <meta-data
+58-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:17:5-83
+59            android:name="expo.modules.updates.ENABLED"
+59-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:17:16-59
+60            android:value="false" />
+60-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:17:60-81
+61        <meta-data
+61-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:18:5-105
+62            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+62-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:18:16-80
+63            android:value="ALWAYS" />
+63-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:18:81-103
+64        <meta-data
+64-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:19:5-99
+65            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+65-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:19:16-79
+66            android:value="0" />
+66-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:19:80-97
+67
+68        <activity
+68-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:5-32:16
+69            android:name="com.gamepadphone.august.MainActivity"
+69-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:15-43
+70            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+70-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:44-134
+71            android:exported="true"
+71-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:256-279
+72            android:launchMode="singleTask"
+72-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:135-166
+73            android:screenOrientation="unspecified"
+73-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:280-319
+74            android:theme="@style/Theme.App.SplashScreen"
+74-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:210-255
+75            android:windowSoftInputMode="adjustResize" >
+75-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:20:167-209
+76            <intent-filter>
+76-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:21:7-24:23
+77                <action android:name="android.intent.action.MAIN" />
+77-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:22:9-60
+77-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:22:17-58
+78
+79                <category android:name="android.intent.category.LAUNCHER" />
+79-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:23:9-68
+79-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:23:19-66
+80            </intent-filter>
+81            <intent-filter>
+81-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:25:7-31:23
+82                <action android:name="android.intent.action.VIEW" />
+82-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:7-58
+82-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:15-56
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:9-67
+84-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:19-65
+85                <category android:name="android.intent.category.BROWSABLE" />
+85-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:7-67
+85-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:17-65
+86
+87                <data android:scheme="com.gamepadphone.august" />
+87-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:7-37
+87-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:13-35
+88                <data android:scheme="exp+gamepadphone" />
+88-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:7-37
+88-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:13-35
+89            </intent-filter>
+90        </activity>
+91        <activity
+91-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-25:20
+92            android:name="expo.modules.devlauncher.launcher.DevLauncherActivity"
+92-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-81
+93            android:exported="true"
+93-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-36
+94            android:launchMode="singleTask"
+94-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-44
+95            android:theme="@style/Theme.DevLauncher.LauncherActivity" >
+95-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-70
+96            <intent-filter>
+96-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:13-24:29
+97                <action android:name="android.intent.action.VIEW" />
+97-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:7-58
+97-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:15-56
+98
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:9-67
+99-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:19-65
+100                <category android:name="android.intent.category.BROWSABLE" />
+100-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:7-67
+100-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:17-65
+101
+102                <data android:scheme="expo-dev-launcher" />
+102-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:7-37
+102-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:13-35
+103            </intent-filter>
+104        </activity>
+105        <activity
+105-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:9-29:70
+106            android:name="expo.modules.devlauncher.launcher.errors.DevLauncherErrorActivity"
+106-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:13-93
+107            android:screenOrientation="portrait"
+107-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-49
+108            android:theme="@style/Theme.DevLauncher.ErrorActivity" />
+108-->[:expo-dev-launcher] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:13-67
+109        <activity
+109-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-21:20
+110            android:name="expo.modules.devmenu.DevMenuActivity"
+110-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-64
+111            android:exported="true"
+111-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-36
+112            android:launchMode="singleTask"
+112-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-44
+113            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" >
+113-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-75
+114            <intent-filter>
+114-->[:expo-dev-menu] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-20:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:7-58
+115-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:11:15-56
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:9-67
+117-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:27:19-65
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:7-67
+118-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:12:17-65
+119
+120                <data android:scheme="expo-dev-menu" />
+120-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:7-37
+120-->C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\android\app\src\main\AndroidManifest.xml:13:13-35
+121            </intent-filter>
+122        </activity>
+123
+124        <provider
+124-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:9-30:20
+125            android:name="expo.modules.filesystem.FileSystemFileProvider"
+125-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-74
+126            android:authorities="com.gamepadphone.august.FileSystemFileProvider"
+126-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:13-74
+127            android:exported="false"
+127-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-37
+128            android:grantUriPermissions="true" >
+128-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:13-47
+129            <meta-data
+129-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:13-29:70
+130                android:name="android.support.FILE_PROVIDER_PATHS"
+130-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:17-67
+131                android:resource="@xml/file_system_provider_paths" />
+131-->[:expo-file-system] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-file-system\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:17-67
+132        </provider>
+133
+134        <meta-data
+134-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-11:89
+135            android:name="org.unimodules.core.AppLoader#react-native-headless"
+135-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-79
+136            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+136-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-86
+137        <meta-data
+137-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-15:45
+138            android:name="com.facebook.soloader.enabled"
+138-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-57
+139            android:value="true" />
+139-->[:expo-modules-core] C:\Users\August\Desktop\Projetos\GamepadPhone\meugamepad5.0\GamepadPhone\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-33
+140
+141        <activity
+141-->[com.facebook.react:react-android:0.76.7] C:\Users\August\.gradle\caches\8.10.2\transforms\e7d2cf3ea0f710e01bb7af2449bcb768\transformed\react-android-0.76.7-debug\AndroidManifest.xml:19:9-21:40
+142            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+142-->[com.facebook.react:react-android:0.76.7] C:\Users\August\.gradle\caches\8.10.2\transforms\e7d2cf3ea0f710e01bb7af2449bcb768\transformed\react-android-0.76.7-debug\AndroidManifest.xml:20:13-77
+143            android:exported="false" />
+143-->[com.facebook.react:react-android:0.76.7] C:\Users\August\.gradle\caches\8.10.2\transforms\e7d2cf3ea0f710e01bb7af2449bcb768\transformed\react-android-0.76.7-debug\AndroidManifest.xml:21:13-37
+144
+145        <uses-library
+145-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:29:9-31:40
+146            android:name="androidx.camera.extensions.impl"
+146-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:30:13-59
+147            android:required="false" />
+147-->[androidx.camera:camera-extensions:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\f3e1acc576e34425d7ab13b0ff760695\transformed\camera-extensions-1.4.1\AndroidManifest.xml:31:13-37
+148
+149        <service
+149-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:24:9-33:19
+150            android:name="androidx.camera.core.impl.MetadataHolderService"
+150-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:25:13-75
+151            android:enabled="false"
+151-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:26:13-36
+152            android:exported="false" >
+152-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:27:13-37
+153            <meta-data
+153-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:30:13-32:89
+154                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+154-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:31:17-103
+155                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+155-->[androidx.camera:camera-camera2:1.4.1] C:\Users\August\.gradle\caches\8.10.2\transforms\9e63f272e990db65332b556600e34ace\transformed\camera-camera2-1.4.1\AndroidManifest.xml:32:17-86
+156        </service>
+157        <service
+157-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
+158            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+158-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
+159            android:directBootAware="true"
+159-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:17:13-43
+160            android:exported="false" >
+160-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
+161            <meta-data
+161-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
+162                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+162-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\d6acd49bc8c6f6e3eac1bd79a1b3dc07\transformed\play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
+164            <meta-data
+164-->[com.google.mlkit:vision-common:17.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\902cd9d0abb91a2e976f2e61263f4e32\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+165                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+165-->[com.google.mlkit:vision-common:17.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\902cd9d0abb91a2e976f2e61263f4e32\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.mlkit:vision-common:17.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\902cd9d0abb91a2e976f2e61263f4e32\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+167            <meta-data
+167-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:20:13-22:85
+168                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+168-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:21:17-120
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:22:17-82
+170        </service>
+171
+172        <provider
+172-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:9:9-13:38
+173            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+173-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:10:13-78
+174            android:authorities="com.gamepadphone.august.mlkitinitprovider"
+174-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:11:13-69
+175            android:exported="false"
+175-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:12:13-37
+176            android:initOrder="99" />
+176-->[com.google.mlkit:common:18.9.0] C:\Users\August\.gradle\caches\8.10.2\transforms\a819767808f915b95365f22418b30856\transformed\common-18.9.0\AndroidManifest.xml:13:13-35
+177
+178        <activity
+178-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\5a61ceb5223f0c2ebaebac1398eaee02\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+179            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+179-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\5a61ceb5223f0c2ebaebac1398eaee02\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+180            android:exported="false"
+180-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\5a61ceb5223f0c2ebaebac1398eaee02\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+181            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+181-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\5a61ceb5223f0c2ebaebac1398eaee02\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+182
+183        <meta-data
+183-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\c89145c49721b9051176916a73ffc54f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+184            android:name="com.google.android.gms.version"
+184-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\c89145c49721b9051176916a73ffc54f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+185            android:value="@integer/google_play_services_version" />
+185-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\August\.gradle\caches\8.10.2\transforms\c89145c49721b9051176916a73ffc54f\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+186
+187        <provider
+187-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+189            android:authorities="com.gamepadphone.august.androidx-startup"
+189-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+190            android:exported="false" >
+190-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+191            <meta-data
+191-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+192-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+193                android:value="androidx.startup" />
+193-->[androidx.emoji2:emoji2:1.3.0] C:\Users\August\.gradle\caches\8.10.2\transforms\43348f4790489d0d58047534c8ae45cc\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\August\.gradle\caches\8.10.2\transforms\f4e0fabf694af3fb20704deb6901023f\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\August\.gradle\caches\8.10.2\transforms\f4e0fabf694af3fb20704deb6901023f\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+196                android:value="androidx.startup" />
+196-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\August\.gradle\caches\8.10.2\transforms\f4e0fabf694af3fb20704deb6901023f\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+197            <meta-data
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+199                android:value="androidx.startup" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+200        </provider>
+201
+202        <receiver
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+203            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+204            android:directBootAware="false"
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+205            android:enabled="true"
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+206            android:exported="true"
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+207            android:permission="android.permission.DUMP" >
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+208            <intent-filter>
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+209                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+210            </intent-filter>
+211            <intent-filter>
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+212                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+213            </intent-filter>
+214            <intent-filter>
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+215                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+216            </intent-filter>
+217            <intent-filter>
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+218                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\August\.gradle\caches\8.10.2\transforms\54c4dfb50a623bb88cfb1a28df88c5ed\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+219            </intent-filter>
+220        </receiver>
+221
+222        <service
+222-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+223            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+223-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+224            android:exported="false" >
+224-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+225            <meta-data
+225-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+226                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+226-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+227                android:value="cct" />
+227-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\August\.gradle\caches\8.10.2\transforms\4d8ebfa07e261177c27e19d4b50e7051\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+228        </service>
+229        <service
+229-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+230            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+230-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+231            android:exported="false"
+231-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+232            android:permission="android.permission.BIND_JOB_SERVICE" >
+232-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+233        </service>
+234
+235        <receiver
+235-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+236            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+236-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+237            android:exported="false" />
+237-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\August\.gradle\caches\8.10.2\transforms\6ca9a21791105ff677fdd64f6708caa1\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+238    </application>
+239
+240</manifest>
