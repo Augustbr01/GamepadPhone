@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   buttonContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column', // Mudei para 'column' para ter os botões verticalmente
     justifyContent: 'space-between',
     width: '100%',
     paddingHorizontal: 20,
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#44ff44',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: 10,
+    marginLeft: 10, // Mudei para left para alinhar os botões na lateral
     paddingVertical: 30,
     borderRadius: 10,
   },
