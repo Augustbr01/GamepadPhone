@@ -4,6 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ConnectionScreen = ({ onConnect }) => {
   const [url, setUrl] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     AsyncStorage.getItem('@socketURL.2').then(storedUrl => {
@@ -11,22 +12,56 @@ const ConnectionScreen = ({ onConnect }) => {
     });
   }, []);
 
+  const validateUrl = (url) => {
+    const wsRegex = /^ws:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d{1,5}$/;
+    return wsRegex.test(url);
+  };
+
   const handleConnect = () => {
-    if (url) {
-      AsyncStorage.setItem('@socketURL.2', url);
-      onConnect(url);
+    setErrorMessage('');
+    if (!url) {
+      setErrorMessage('Por favor, digite um URL.');
+      return;
     }
+    if (!validateUrl(url)) {
+      setErrorMessage('URL inválido. Use o formato ws://IP:PORTA (ex.: ws://192.168.1.100:46557).');
+      return;
+    }
+    AsyncStorage.setItem('@socketURL.2', url);
+    onConnect(url, handleConnectionError);
+  };
+
+  const handleConnectionError = (error) => {
+    setErrorMessage(`Falha ao conectar: ${error.message || 'IP ou porta inválidos.'}`);
+    setTimeout(() => {
+      setErrorMessage('');
+    }, 5000);
   };
 
   const handlePreset1 = () => {
     const presetUrl = 'ws://192.168.100.105:46557';
-    setUrl(presetUrl); // Atualiza o campo de texto com o URL predefinido
+    setUrl(presetUrl);
     AsyncStorage.setItem('@socketURL.2', presetUrl);
-    onConnect(presetUrl); // Conecta diretamente
+    onConnect(presetUrl, handleConnectionError);
+  };
+
+  // Função para limpar o AsyncStorage
+  const handleClearStorage = async () => {
+    try {
+      await AsyncStorage.clear();
+      setUrl(''); // Limpa o campo de texto
+      setErrorMessage('Cache do AsyncStorage limpo com sucesso!');
+    } catch (error) {
+      setErrorMessage('Erro ao limpar o AsyncStorage: ' + error.message);
+    }
   };
 
   return (
     <View style={styles.container}>
+      {errorMessage ? (
+        <Text style={styles.errorText}>{errorMessage}</Text>
+      ) : null}
+
       <TextInput
         style={styles.input}
         placeholder="Digite o URL do WebSocket (ex.: ws://192.168.1.100:46557)"
@@ -42,6 +77,10 @@ const ConnectionScreen = ({ onConnect }) => {
           <Text style={styles.buttonText}>Preset1</Text>
         </TouchableOpacity>
       </View>
+      {/* Botão temporário para limpar o AsyncStorage */}
+      <TouchableOpacity style={styles.clearButton} onPress={handleClearStorage}>
+        <Text style={styles.buttonText}>Limpar Cache</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -85,10 +124,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginLeft: 10,
   },
+  clearButton: {
+    backgroundColor: '#FF4D4D',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    marginTop: 20,
+  },
   buttonText: {
     color: '#fff',
     fontSize: 18,
     fontWeight: 'bold',
+  },
+  errorText: {
+    color: '#FF4D4D',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
   },
 });
 

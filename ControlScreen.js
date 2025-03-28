@@ -95,48 +95,79 @@ const ControlScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#000', // Preto
     flex: 1,
-    backgroundColor: '#1a1a1a',
-    justifyContent: 'center',
-    alignItems: 'center',
     padding: 20,
+    justifyContent: 'space-between',
+  },
+  gearLabel: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   debug: {
     position: 'absolute',
     top: 20,
     left: 20,
     color: '#fff',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
+  },
+  steeringIndicator: {
+    alignSelf: 'center',
+    width: '60%',
+    height: 30,
+    backgroundColor: '#333',
+    borderRadius: 15,
+    overflow: 'hidden',
+    marginVertical: 20,
+  },
+  steeringBar: {
+    height: '100%',
+    backgroundColor: '#2196F3', // Azul vibrante
+    borderRadius: 15,
   },
   buttonContainer: {
-    flexDirection: 'column', // Mudei para 'column' para ter os botões verticalmente
+    flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    paddingHorizontal: 20,
   },
   buttonLeft: {
-    flex: 1,
-    backgroundColor: '#ff4444',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 10,
-    paddingVertical: 30,
+    width: 120,
+    height: 300,
+    backgroundColor: '#ff4d4d', // Vermelho escuro
     borderRadius: 10,
+    paddingVertical: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 5,
   },
   buttonRight: {
-    flex: 1,
-    backgroundColor: '#44ff44',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: 10, // Mudei para left para alinhar os botões na lateral
-    paddingVertical: 30,
+    width: 120,
+    height: 300,
+    backgroundColor: '#4CAF50', // Verde escuro
     borderRadius: 10,
+    paddingVertical: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 5,
   },
   buttonText: {
-    fontSize: 24,
+    fontSize: 18,
     color: '#fff',
     fontWeight: 'bold',
+    marginTop: 5,
   },
 });
 

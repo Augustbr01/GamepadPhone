@@ -8,15 +8,15 @@ const WebSocketService = {
       console.log('Conectado ao Assetto Corsa');
       onOpen();
     };
-    socket.onclose = () => {
-      console.log('Desconectado do Assetto Corsa');
+    socket.onclose = (event) => {
+      console.log('Desconectado do Assetto Corsa', event);
       socket = null;
-      onClose();
+      onClose({ message: 'Conexão fechada.' });
     };
     socket.onerror = (error) => {
       console.error('Erro no WebSocket:', error);
       socket = null;
-      onClose();
+      onClose({ message: 'Não foi possível conectar. Verifique o IP e a porta.' });
     };
     socket.onmessage = (event) => {
       if (event.data.startsWith('P')) {
