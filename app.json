@@ -30,7 +30,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-      
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b327875d-c9d2-4f0d-8a72-76b57870867e"
+      }
+    },
+    "owner": "augustogatti"  
     }
 }
